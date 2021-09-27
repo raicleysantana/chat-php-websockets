@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13e8dbf4-b4ae-46d4-b12e-c8f90a234a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatroom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/parsley.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/signin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/ChatRooms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/ChatUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/Database_connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/ARIALN.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/ARIALNB.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/ARIALNBI.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/ARIALNI.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/arial.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/arialbd.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/arialbi.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/ariali.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/font/ariblk.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/ratchet/rfc6455" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/cboden/ratchet" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1nMi87FbLhSQHstV7yWOhcbDKtk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\dsv\chat" />
+      <recent name="C:\xampp\htdocs\dsv\chat\css" />
+      <recent name="C:\xampp\htdocs\dsv\chat\database\font" />
+      <recent name="C:\xampp\htdocs\dsv\chat\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\dsv\chat\src" />
+      <recent name="C:\xampp\htdocs\dsv\chat" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13e8dbf4-b4ae-46d4-b12e-c8f90a234a00" name="Default Changelist" comment="" />
+      <created>1611206198827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611206198827</updated>
+      <workItem from="1611206214947" duration="2337000" />
+      <workItem from="1611248833147" duration="29000" />
+      <workItem from="1611458561005" duration="11239000" />
+      <workItem from="1611527335692" duration="16203000" />
+      <workItem from="1611593292302" duration="358000" />
+      <workItem from="1611789917498" duration="2941000" />
+      <workItem from="1612075918069" duration="1824000" />
+      <workItem from="1612132248677" duration="4146000" />
+      <workItem from="1612197259280" duration="21000" />
+      <workItem from="1612303706532" duration="3394000" />
+      <workItem from="1612307678358" duration="7749000" />
+      <workItem from="1612372066690" duration="1224000" />
+      <workItem from="1612408248378" duration="1013000" />
+      <workItem from="1612565076911" duration="9668000" />
+      <workItem from="1612976851131" duration="2294000" />
+      <workItem from="1612989154568" duration="175000" />
+      <workItem from="1613492194094" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

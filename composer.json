@@ -1,0 +1,18 @@
+{
+  "name": "vendor/chat",
+  "authors": [
+    {
+      "name": "raicleysantana",
+      "email": "raicleysanana1@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MyApp\\": "src"
+    }
+  },
+  "require": {
+    "phpmailer/phpmailer": "^6.2",
+    "cboden/ratchet": "^0.4.3"
+  }
+}

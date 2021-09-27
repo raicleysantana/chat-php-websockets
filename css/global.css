@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialised;
+}
+
+body, input, button {
+    font-family: Roboto, sans-serif;
+}
+
+ul.parsley-errors-list {
+    list-style: none;
+    color: #B94A48;
+}
+
+ul.parsley-errors-list li {
+    font-size: 10pt;
+}
