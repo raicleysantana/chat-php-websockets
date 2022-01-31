@@ -53,8 +53,16 @@ $user_data = $user_object->get_user_all_data();
         <div class="col-lg-8">
             <div class="card">
                 <div class="card-header">
-                    Chat
+                    <div class="row">
+                        <div class="col col-sm-6">
+                            <h3>Chat</h3>
+                        </div>
+                        <div class="col col-sm-6 text-right">
+                            <a href="privatechat.php" class="btn btn-success btn-sm">Chat Privado</a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="card-body" id="messages_area">
                     <?php
                     foreach ($chat_data as $chat):
@@ -183,8 +191,6 @@ $user_data = $user_object->get_user_all_data();
         };
 
         conn.onmessage = function (e) {
-            console.log(e.data);
-
             var data = JSON.parse(e.data);
             var row_class = '';
             var background_class = ''
@@ -210,7 +216,7 @@ $user_data = $user_object->get_user_all_data();
         };
 
         conn.onclose = function (e) {
-            alert('tetes');
+
         }
 
         $("#form-chat_room").parsley();

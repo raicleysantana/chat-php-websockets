@@ -18,6 +18,8 @@ class ChatUser
     private $user_created_on;
     private $user_verification_code;
     private $user_login_status;
+    private $user_token;
+    private $user_connection_id;
     public $connect;
 
 
@@ -67,6 +69,38 @@ class ChatUser
     public function getUserEmail()
     {
         return $this->user_email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserToken()
+    {
+        return $this->user_token;
+    }
+
+    /**
+     * @param mixed $user_token
+     */
+    public function setUserToken($user_token)
+    {
+        $this->user_token = $user_token;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserConnectionId()
+    {
+        return $this->user_connection_id;
+    }
+
+    /**
+     * @param mixed $user_connection_id
+     */
+    public function setUserConnectionId($user_connection_id)
+    {
+        $this->user_connection_id = $user_connection_id;
     }
 
     /**
@@ -239,8 +273,8 @@ class ChatUser
         $mail->CharSet = PHPMailer::CHARSET_UTF8;
         $mail->SMTPAuth = true;
         $mail->Host = "smtp.gmail.com";
-        $mail->Username = "raicleysantana1@gmail.com";
-        $mail->Password = "Rsds4012";
+        $mail->Username = "*******";
+        $mail->Password = "*******";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         $mail->setFrom('raicleysantana1@gmail.com', 'RAICLEY');
@@ -297,17 +331,18 @@ HTML;
 
     public function update_user_login_data()
     {
-        $query = "UPDATE chat_user_table SET user_login_status = :user_login_status WHERE user_id = :user_id";
+        $query = "UPDATE chat_user_table SET user_login_status = :user_login_status, user_token = :user_token "
+            . "WHERE user_id = :user_id";
 
         $statement = $this->connect->prepare($query);
 
         $statement->bindParam(":user_id", $this->user_id);
         $statement->bindParam(":user_login_status", $this->user_login_status);
+        $statement->bindParam(":user_token", $this->user_token);
 
         if ($statement->execute()) {
             return true;
         } else {
-
             return false;
         }
     }
@@ -372,8 +407,30 @@ HTML;
         $statement = $this->connect->prepare($query);
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
 
+    function get_user_all_with_status_count()
+    {
+        $query = "SELECT user_id, user_name, user_profile, user_login_status, "
+            . "(SELECT COUNT(*) FROM chat_message WHERE to_user_id = :user_id AND from_user_id = chat_user_table.user_id AND status = 'No') "
+            . "AS count_status FROM chat_user_table";
 
+        $statement = $this->connect->prepare($query);
+        $statement->bindParam(":user_id", $this->user_id);
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function update_user_connection_id()
+    {
+        $query = "UPDATE chat_user_table SET user_connection_id = :user_connection_id " .
+            "WHERE user_token = :user_token";
+
+        $statement = $this->connect->prepare($query);
+        $statement->bindParam(':user_connection_id', $this->user_connection_id);
+        $statement->bindParam(':user_token', $this->user_token);
+        $statement->execute();
     }
 
 

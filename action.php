@@ -16,4 +16,16 @@ if (isset($_POST['action']) && $_POST['action'] == 'leave') {
         echo json_encode(['status' => 1]);
     }
 }
+
+if (isset($_POST['action']) && $_POST['action'] === 'fetch_chat') {
+    require 'database/PrivateChat.php';
+
+    $private_chat_object = new PrivateChat();
+    $private_chat_object->setFromUserId($_POST['to_user_id']);
+    $private_chat_object->setToUserId($_POST['from_user_id']);
+
+    echo json_encode($private_chat_object->get_all_chat_data());
+    exit();
+}
+
 ?>

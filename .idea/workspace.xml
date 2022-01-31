@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e8dbf4-b4ae-46d4-b12e-c8f90a234a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/parsley.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/signin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/ChatRooms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/ChatUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/Database_connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/ARIALN.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/ARIALNB.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/ARIALNBI.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/ARIALNI.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/arial.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/arialbd.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/arialbi.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/ariali.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/font/ariblk.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/PrivateChat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/privatechat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom.php" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/ChatUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/ChatUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -90,6 +80,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp7.4\htdocs\dsv\chat" />
       <recent name="C:\xampp\htdocs\dsv\chat" />
       <recent name="C:\xampp\htdocs\dsv\chat\css" />
       <recent name="C:\xampp\htdocs\dsv\chat\database\font" />
@@ -125,6 +116,12 @@
       <workItem from="1612976851131" duration="2294000" />
       <workItem from="1612989154568" duration="175000" />
       <workItem from="1613492194094" duration="32000" />
+      <workItem from="1642974707956" duration="728000" />
+      <workItem from="1642977969566" duration="1545000" />
+      <workItem from="1642993330456" duration="47000" />
+      <workItem from="1643517267332" duration="9450000" />
+      <workItem from="1643574424473" duration="10924000" />
+      <workItem from="1643592730826" duration="4276000" />
     </task>
     <servers />
   </component>
