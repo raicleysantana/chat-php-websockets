@@ -150,37 +150,56 @@ $chat_data = $chat_object->get_all_chat_data();
         conn.onmessage = function (e) {
             var data = JSON.parse(e.data);
 
-            var row_class = '';
-            var background_class = '';
+            console.log(data);
 
-            if (data.from == 'Eu') {
-                row_class = 'row justify-content-start';
-                background_class = 'alert-primary';
+            if (data.status_type == 'Online') {
+                $('#userstatus_' + data.user_id_status).html(`<i class="fa fa-circle text-success"></i>`);
+            } else if (data.status_type == 'Offline') {
+                $('#userstatus_' + data.user_id_status).html(`<i class="fa fa-circle text-danger"></i>`);
             } else {
-                row_class = 'row justify-content-end';
-                background_class = 'alert-success';
-            }
 
-            if (receiver_userid == data.userId || data.from == 'Eu') {
-                if ($('#is_active_chat').val() == 'Yes') {
-                    var html_data = `<div class="${row_class}">`;
-                    html_data += `<div class="col-sm-10">`;
-                    html_data += `<div class="shadow-sm alert ${background_class}">`;
-                    html_data += `<b>${data.from} - </b>${data.msg}<br>`;
-                    html_data += `<div class="text-right">`;
-                    html_data += `<small><i>${data.datetime}</i></small>`;
-                    html_data += `</div>`;
-                    html_data += `</div>`;
-                    html_data += `</div>`;
-                    html_data += `</div>`;
 
-                    $('#messages_area').append(html_data);
-                    $('#messages_area').scrollTop($('#messages_area')[0].scrollHeight);
-                    $('#chat_message').val('');
+                var row_class = '';
+                var background_class = '';
+
+                if (data.from == 'Eu') {
+                    row_class = 'row justify-content-start';
+                    background_class = 'alert-primary';
+                } else {
+                    row_class = 'row justify-content-end';
+                    background_class = 'alert-success';
+                }
+
+                if (receiver_userid == data.userId || data.from == 'Eu') {
+                    if ($('#is_active_chat').val() == 'Yes') {
+                        var html_data = `<div class="${row_class}">`;
+                        html_data += `<div class="col-sm-10">`;
+                        html_data += `<div class="shadow-sm alert ${background_class}">`;
+                        html_data += `<b>${data.from} - </b>${data.msg}<br>`;
+                        html_data += `<div class="text-right">`;
+                        html_data += `<small><i>${data.datetime}</i></small>`;
+                        html_data += `</div>`;
+                        html_data += `</div>`;
+                        html_data += `</div>`;
+                        html_data += `</div>`;
+
+                        $('#messages_area').append(html_data);
+                        $('#messages_area').scrollTop($('#messages_area')[0].scrollHeight);
+                        $('#chat_message').val('');
+                    }
+                } else {
+                    var count_chat = $('#userid_' + data.userId).text();
+
+                    if (count_chat == '') {
+                        count_chat = 0;
+                    }
+
+                    count_chat++;
+
+                    $('#userid_' + data.userId).html(`<span class="badge badge-danger badge-pill">${count_chat}</span>`);
                 }
             }
         }
-
 
         conn.onclose = function (e) {
             console.log('Connection close');
@@ -323,6 +342,25 @@ $chat_data = $chat_object->get_all_chat_data();
                 conn.send(JSON.stringify(data));
 
             }
+        });
+
+        $('#logout').click(function () {
+            user_id = $('#login_user_id').val();
+
+            $.ajax({
+                url: 'action.php',
+                method: 'POST',
+                data: {user_id, action: 'leave'},
+                success: function (data) {
+                    var reponse = JSON.parse(data);
+
+                    if (reponse.status == 1) {
+                        conn.close();
+
+                        location = 'index.php';
+                    }
+                }
+            })
         });
     });
 </script>

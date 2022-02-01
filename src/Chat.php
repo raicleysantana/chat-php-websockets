@@ -122,6 +122,23 @@ class Chat implements MessageComponentInterface
 
     public function onClose(ConnectionInterface $conn)
     {
+        $queryString = $conn->httpRequest->getUri()->getQuery();
+
+        parse_str($queryString, $queryArray);
+
+        $user_object = new \ChatUser();
+
+        $user_object->setUserToken($queryArray['token']);
+        $user_data = $user_object->get_user_id_from_token();
+        $user_id = $user_data['user_id'];
+        $data['status_type'] = 'Offline';
+        $data['user_id_status'] = $user_id;
+        $data['teste'] = 'teste';
+
+        foreach ($this->clients as $client) {
+            $client->send(json_encode($data));
+
+        }
         // The connection is closed, remove it, as we can no longer send it messages
         $this->clients->detach($conn);
 

@@ -433,5 +433,17 @@ HTML;
         $statement->execute();
     }
 
+    public function get_user_id_from_token()
+    {
+        $query = "SELECT user_id FROM chat_user_table WHERE user_token = :user_token";
+
+        $statement = $this->connect->prepare($query);
+        $statement->bindParam(':user_token', $this->user_token);
+        $statement->execute();
+        $user_id = $statement->fetch(PDO::FETCH_ASSOC);
+
+        return $user_id;
+    }
+
 
 }
